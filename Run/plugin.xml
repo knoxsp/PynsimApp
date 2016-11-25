@@ -1,0 +1,48 @@
+<plugin_info>
+    <plugin_name>Run  Model</plugin_name>
+    <plugin_dir>run_prototype.bat</plugin_dir>
+    <plugin_description>Run the  Model using the active network as input.</plugin_description>
+    <plugin_epilog>
+        Written by Stephen Knox stephen.knox@mancheser.ac.uk
+        (c) Copyright 2015, University of Manechster.
+        For more information visit www.hydraplatform.com
+    </plugin_epilog>
+    <smallicon>pynsim16.png</smallicon>
+    <largeicon>pynsim32.png</largeicon>
+    <mandatory_args>
+        <arg>
+           <name>Network</name>
+           <switch>-n</switch>
+           <multiple>N</multiple>
+           <argtype>network</argtype>
+           <help>Specify the network against which you will run this model.</help>
+        </arg>
+        <arg>
+           <name>Scenario</name>
+           <switch>-s</switch>
+           <multiple>N</multiple>
+           <argtype>scenario</argtype>
+           <help>Specify the scenario against which you will run this model.</help>
+        </arg>
+    </mandatory_args>
+   <non_mandatory_args>
+        <arg>
+            <name>server_url</name>
+            <switch>-u</switch>
+            <multiple>N</multiple>
+            <argtype>string</argtype>
+            <help>Specify the URL of the server to which this
+                        plug-in connects.</help>
+        </arg>
+        <arg>
+            <name>session_id</name>
+            <switch>-c</switch>
+            <multiple>N</multiple>
+            <argtype>string</argtype>
+            <help>Specify the session ID for the connection. If not specified,
+            the plugin will try to connect based on the credentials it finds in config</help>
+        </arg>
+    </non_mandatory_args> 
+    <switches>
+    </switches>
+ </plugin_info>
